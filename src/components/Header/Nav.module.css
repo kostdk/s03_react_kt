@@ -1,0 +1,17 @@
+.nav {
+  display: flex;
+  background-color: aqua;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 518px;
+  list-style-type: none;
+  background-color: white;
+  text-emphasis: none;
+}
+
+a {
+  text-decoration: none;
+  color: #8b8b8b;
+}
+

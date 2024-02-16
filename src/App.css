@@ -5,10 +5,13 @@ body {
     box-sizing: inherit;
 }
 
-h1{
+.h1{
     font-size: 64px;
     font-weight: 900;
+    padding-top: 1000px;
+    
 }
+
 
 html{
     box-sizing: border-box;

@@ -1,16 +1,16 @@
 import React from "react";
 import Head from "../components/Head/Head";
 import Categories from "../components/Categories/Categories";
-import ProductList from "./ProductList";
 import DiscountForm from "../components/DiscountForm/DiscountForm";
+import Sales from "../components/Sales/Sales";
 
 export default function MainPage() {
   return (
     <>
    <Head></Head>
-   {/* <ProductList></ProductList> */}
-   <Categories></Categories>
+   <Categories total="4" ></Categories>
    <DiscountForm></DiscountForm>
+   <Sales></Sales>
    </>
   )
 }

@@ -1,6 +1,6 @@
 import styles from "./Head.module.css";
 import background from "../../img/head.svg";
-import ButtonCheckout from "../Buttons/ButtonCheckout";
+import ButtonCheckout from "../Buttons/Button_for_all";
 
 
 export default function Head() {
@@ -8,7 +8,7 @@ export default function Head() {
     <div className={styles.head}>
         <div className={styles.content}>
             <h1>Amazing Discounts <br></br> on Garden Products!</h1>
-            <ButtonCheckout></ButtonCheckout>
+            <ButtonCheckout text="Check out"></ButtonCheckout>
         </div>
       
     </div>

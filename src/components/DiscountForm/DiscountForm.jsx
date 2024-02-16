@@ -49,7 +49,7 @@ export default function DiscountForm() {
                 className={styles.field} placeholder={"Name"}
                 {...register("name", { required: true })}
               />
-              {errors.name && <span>Поле обязательно</span>}
+              {errors.name && <span><br></br>Поле обязательно</span>}
             </div>
 
             <div>
@@ -58,7 +58,7 @@ export default function DiscountForm() {
                 type="tel"
                 {...register("phone", { required: true })}
               />
-              {errors.phone && <span>Поле обязательно</span>}
+              {errors.phone && <span><br></br>Поле обязательно</span>}
             </div>
 
             <div>
@@ -67,7 +67,7 @@ export default function DiscountForm() {
                 type="email" 
                 {...register("email", { required: true })}
               />
-              {errors.email && <span>Поле обязательно</span>}
+              {errors.email && <span><br></br>Поле обязательно</span>}
             </div>
 
             <button className={styles.button} type="submit">

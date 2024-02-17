@@ -9,6 +9,7 @@ import { AllProducts } from "./pages/AllProducts";
 import { AllSales } from "./pages/AllSales";
 import {NotFound} from "./pages/NotFound"
 import { ProductCat } from "./pages/ProductCat";
+import { Products } from "./pages/Products";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Route path="AllProducts" element={<AllProducts/>}/>
             <Route path="AllSales" element={<AllSales/>}/>
             <Route path="ProductCat" element={<ProductCat/>}/>
+            <Route path="Products" element={<Products/>}/>
             <Route path="*" element={<NotFound/>}/>
           </Route>
         </Route>

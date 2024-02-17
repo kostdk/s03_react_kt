@@ -20,7 +20,7 @@ export default function Sales() {
     return Math.floor(Math.random() * max);
   }
   const saleId = getRandomInt(salesfiltered.length - 4);
-  console.log(saleId);
+  
   function percent(newprice, oldprice){
     
     return ((Math.abs(oldprice-newprice))/oldprice*100)
@@ -47,8 +47,8 @@ export default function Sales() {
 
               <p>{sale.title.length < 25 ? sale.title : sale.title.slice(0,15)+"..."}</p>
               <div className={styles.prices}>
-                <div className={styles.price}>${sale.price}</div>
-                <div className={styles.oldprice}>{sale.discont_price}</div>
+                <div className={styles.price}>${sale.discont_price}</div>
+                <div className={styles.oldprice}>{sale.price}</div>
               </div>
             </Link>
           </div>

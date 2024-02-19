@@ -1,8 +1,18 @@
+import React from "react";
+import { useEffect, useState } from "react";
+import ShowProducts from "../components/ShowProducts/ShowProducts";
+import { useLocation } from "react-router-dom";
+
+
+
 const AllProducts = () => {
+    const location=useLocation()
+    console.log(location)
     return(
         <div>
-            <h1>All Products</h1>
-            <p>Demo for all products</p>
+            <h1>All products</h1>
+            <ShowProducts from={location.pathname}></ShowProducts>
+            
         </div>
     )
 }

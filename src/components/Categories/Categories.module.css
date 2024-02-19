@@ -10,7 +10,9 @@
 }
 .line{
     width: 832px;
-    border: 1px solid #DDDDDD
+    border: 1px solid #DDDDDD;
+    border-top: none;
+    
 }
 .button{
     display: flex;

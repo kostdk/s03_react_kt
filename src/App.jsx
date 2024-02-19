@@ -5,11 +5,12 @@ import "./App.css";
 import MainPage from "./pages/MainPage";
 import { Layout } from "./components/Layout";
 import { PageCategories } from "./pages/PageCategories";
-import { AllProducts } from "./pages/AllProducts";
+import ALLProducts, { AllProducts } from "./pages/AllProducts";
 import { AllSales } from "./pages/AllSales";
 import {NotFound} from "./pages/NotFound"
 import { ProductCat } from "./pages/ProductCat";
 import { Products } from "./pages/Products";
+import Product from "./components/Product/Product";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
             <Route path="AllSales" element={<AllSales/>}/>
             <Route path="ProductCat" element={<ProductCat/>}/>
             <Route path="Products" element={<Products/>}/>
+            <Route path="Product" element={<Product/>}/>
             <Route path="*" element={<NotFound/>}/>
           </Route>
         </Route>

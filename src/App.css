@@ -12,7 +12,13 @@ body {
     
 }
 
-
+a{
+    text-decoration: none;
+    color: #8D8d8D;
+}
+.active {
+    color: #339933;
+  }
 html{
     box-sizing: border-box;
 }
@@ -32,7 +38,5 @@ html{
         /* margin: 0 auto; */
 }
 
-.active {
-    color: #339933;
-  }
+
   

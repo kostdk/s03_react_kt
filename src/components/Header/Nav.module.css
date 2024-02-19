@@ -1,6 +1,6 @@
 .nav {
   display: flex;
-  background-color: aqua;
+ 
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
@@ -10,8 +10,11 @@
   text-emphasis: none;
 }
 
-a {
+.link {
   text-decoration: none;
   color: #8b8b8b;
 }
-
+.aria-current {
+  
+    color: #339933;
+  }

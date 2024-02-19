@@ -5,7 +5,7 @@ import styles from "./Products.module.css"
 const Products = () => {
   const location = useLocation();
   const [catId,catTitle] = location.search.slice(1).split('&')
-  console.log(location);
+  
   let checkcatTitle = catTitle.replace(/%20/g," ")
   
   return (

@@ -15,10 +15,11 @@ export default function Categories(props) {
     fetchCategory();
   }, []);
   categories.slice(0, 4);
-  console.log(categories)
+
+
   return (
     <>
-      <div className={styles.categoriesDiv}>
+      <div className={styles.categoriesDiv} key={categories.id}>
         <h1>Categories</h1>
         <div className={styles.line}></div>
         <Link to="/categories">

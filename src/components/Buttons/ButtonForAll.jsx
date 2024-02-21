@@ -1,4 +1,4 @@
-import styles from "./Button_for_all.module.css";
+import styles from "./ButtonForAll.module.css";
 import { Link } from "react-router-dom";
 
 export default function ButtonCheckout(props) {

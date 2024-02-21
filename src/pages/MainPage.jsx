@@ -7,10 +7,10 @@ import Sales from "../components/Sales/Sales";
 export default function MainPage() {
   return (
     <>
-   <Head></Head>
-   <Categories total="4" ></Categories>
-   <DiscountForm></DiscountForm>
-   <Sales></Sales>
-   </>
-  )
+      <Head></Head>
+      <Categories total="4"></Categories>
+      <DiscountForm></DiscountForm>
+      <Sales></Sales>
+    </>
+  );
 }

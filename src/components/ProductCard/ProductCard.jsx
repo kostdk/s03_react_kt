@@ -1,13 +1,16 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import styles from "./ProductCard.module.css";
-import Button_add from "../Buttons/ButtonAdd";
+import ButtonAdd from "../Buttons/ButtonAdd";
+
+// Компонент для отображения карточки товара при отображении в списке товаров
+// На вход получает массив объектов товаров
 
 export default function ProductCard(props) {
   const [isHovered, setIsHovered] = useState(false);
   const backend = "http://localhost:3333";
 
-  const product = props.product;
+  let product = props.product;
   function percent(newprice, oldprice) {
     return (Math.abs(oldprice - newprice) / oldprice) * 100;
   }
@@ -43,7 +46,7 @@ export default function ProductCard(props) {
           <p className={styles.discont}>
             {product.discont_price != null ? product.price : ""}
           </p>
-          {isHovered && <Button_add text="Add to card"></Button_add>}
+          {isHovered && <ButtonAdd id={product} text="Add to card"></ButtonAdd>}
         </div>
         <p>
           {product.discont_price != null ? (

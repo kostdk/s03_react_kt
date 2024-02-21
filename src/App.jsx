@@ -5,12 +5,14 @@ import "./App.css";
 import MainPage from "./pages/MainPage";
 import { Layout } from "./components/Layout";
 import { PageCategories } from "./pages/PageCategories";
-import ALLProducts, { AllProducts } from "./pages/AllProducts";
+import { AllProducts } from "./pages/AllProducts";
 import { AllSales } from "./pages/AllSales";
 import {NotFound} from "./pages/NotFound"
 import { ProductCat } from "./pages/ProductCat";
 import { Products } from "./pages/Products";
 import Product from "./components/Product/Product";
+import ShoppingCart from "./components/ShoppingCart/ShoppingCart";
+
 
 function App() {
   return (
@@ -25,6 +27,7 @@ function App() {
             <Route path="ProductCat" element={<ProductCat/>}/>
             <Route path="Products" element={<Products/>}/>
             <Route path="Product" element={<Product/>}/>
+            <Route path="ShoppingCart" element={<ShoppingCart/>}/>
             <Route path="*" element={<NotFound/>}/>
           </Route>
         </Route>

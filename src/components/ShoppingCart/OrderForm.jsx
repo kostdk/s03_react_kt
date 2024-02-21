@@ -1,9 +1,9 @@
-import styles from "./DiscountForm.module.css";
+import styles from "./OrderForm.module.css";
 import React, { useEffect, useState } from "react";
-import FormImage from "../../img/formImg.svg";
 import { useForm } from "react-hook-form";
 
-export default function DiscountForm() {
+export default function OrderForm() {
+  
   const {
     register,
     handleSubmit,
@@ -13,7 +13,7 @@ export default function DiscountForm() {
   const onSubmit = async(data) => {
     
     try {
-        const response = await fetch('http://localhost:3333/sale/send', {
+        const response = await fetch('http://localhost:3333/order/send  ', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
@@ -36,11 +36,7 @@ export default function DiscountForm() {
   };
   return (
     <>
-      <div className={styles.formdiv}>
-        <h1>5% off on the first order</h1>
-
         <div className={styles.content}>
-          <img className={styles.img} src={FormImage} max-heigth="auto"></img>
           <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
             <div>
               <input
@@ -69,11 +65,10 @@ export default function DiscountForm() {
             </div>
 
             <button className={styles.button} type="submit">
-              Get a discount
+              Order
             </button>
           </form>
         </div>
-      </div>
     </>
   );
 }

@@ -3,18 +3,15 @@ import { useEffect, useState } from "react";
 import ShowProducts from "../components/ShowProducts/ShowProducts";
 import { useLocation } from "react-router-dom";
 
-
-
 const AllSales = () => {
-    const location=useLocation()
-    console.log(location)
-    return(
-        <div>
-            <h1>All sales</h1>
-            <ShowProducts from={location.pathname}></ShowProducts>
-            
-        </div>
-    )
-}
+  const location = useLocation();
 
-export {AllSales}
+  return (
+    <div>
+      <h1>All sales</h1>
+      <ShowProducts from={location.pathname}></ShowProducts>
+    </div>
+  );
+};
+
+export { AllSales };

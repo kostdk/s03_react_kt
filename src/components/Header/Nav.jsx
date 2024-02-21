@@ -2,7 +2,7 @@ import styles from "./Nav.module.css";
 
 import { Routes, Route, NavLink } from "react-router-dom";
 
-
+// Компонент навигационной панели позволяет перейти на интересующую страницу
 export default function Nav() {
   return (
     <>

@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from "react";
 import styles from "./Counter.module.css";
 import { useSelector } from "react-redux";
-import { useDispatch } from 'react-redux';
-import { decrementQuantity,incrementQuantity } from "../../store/cartActions";
+import { useDispatch } from "react-redux";
+import { decrementQuantity, incrementQuantity } from "../../store/cartActions";
 
 const Counter = (props) => {
-  
   const dispatch = useDispatch();
   let dataforcount = useSelector((state) => state.cart.cartItems);
   useEffect(() => {}, [dataforcount]);
@@ -13,21 +12,11 @@ const Counter = (props) => {
     state.cart.cartItems.find((item) => item.id === props.id)
   );
 
-  // const incrementQuantity = () => {
-  //   setQuantity(quantity + 1);
-  // };
-
-  // const decrementQuantity = () => {
-  //   if (quantity > 1) {
-  //     setQuantity(quantity - 1);
-  //   }
   const handleIncrement = () => {
-    console.log("incr")
     dispatch(incrementQuantity(props.id));
   };
 
   const handleDecrement = () => {
-    console.log("decr")
     dispatch(decrementQuantity(props.id));
   };
 

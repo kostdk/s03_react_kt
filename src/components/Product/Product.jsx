@@ -1,4 +1,4 @@
-import { Link, useLocation, useParams } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 import ButtonAdd from "../Buttons/ButtonAdd";
 import styles from "./Product.module.css";

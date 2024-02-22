@@ -1,4 +1,4 @@
-import { Link, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import ShowProducts from "../components/ShowProducts/ShowProducts";
 import styles from "./Products.module.css";
 

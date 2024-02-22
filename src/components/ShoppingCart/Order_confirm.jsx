@@ -1,18 +1,24 @@
-import styles from "./OrderConfirm.module.css"
+import styles from "./OrderConfirm.module.css";
+import ReactDOM from "react-dom";
+import React from "react";
 
-import React from 'react';
-import './Modal.css';
+const OrderConfirm = ({ onClose }) => {
+  console.log("modaaaaaal");
 
-const Modal = ({ onClose }) => {
   return (
-    <div className="modal-overlay">
-      <div className="modal-content">
-        <h2>Отправка формы</h2>
-        <p>Ваша форма успешно отправлена!</p>
-        <button onClick={onClose}>Закрыть</button>
+    <div className={styles.overlay}>
+      <div className={styles.modal}>
+        <div className={styles.content}>
+          <h2>Congratulations!</h2>
+          <p>Your order has been successfully placed on the website.</p>
+          <span>A manager will contact you shortly to confirm your order.</span>
+        </div>
+        <button className={styles.close} onClick={onClose}>
+          X
+        </button>
       </div>
     </div>
   );
 };
 
-export default Modal;
+export default OrderConfirm;

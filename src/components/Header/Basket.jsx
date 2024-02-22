@@ -13,7 +13,6 @@ export default function Basket() {
     return accumulator + currentValue.quantity;
   }, 0);
   useEffect(() => {
-    console.log("Redux store updated:", myData);
     // Здесь вы можете выполнять любые действия в ответ на обновление хранилища
   }, [myData]); // Подписываемся на изменения myData
 

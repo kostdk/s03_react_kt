@@ -3,7 +3,6 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import Counter from "../Counter/Counter";
-import Button_add from "../Buttons/ButtonAdd";
 import ButtonCheckout from "../Buttons/ButtonForAll";
 import OrderForm from "./OrderForm";
 import ItemDel from "./ItemDel";
